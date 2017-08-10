@@ -20,7 +20,7 @@ operators = {'+': lambda x, y: x + y,
              '^': lambda x, y: x ** y,
              '%': lambda x, y: x % y}
 
-def main(argc):
+def calc(argc):
     """Calc: a simple RPN calculator for Ergonomica.
     
     Usage:
@@ -51,3 +51,5 @@ def main(argc):
         print(CALCULATOR_WELCOME_MESSAGE)
     
         print("\n".join([str(x) for x in stack]))
+        
+exports = {"calc": calc}
